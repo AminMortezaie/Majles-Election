@@ -1,0 +1,82 @@
+<Form>
+            <Grid columns='equal'>
+              
+                <Grid.Column>
+                  <Responsive as={Segment} >
+                    <Form.Field control={Input} label="شماره کاندیدا" />
+                    </Responsive>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                <Responsive as={Segment}>
+               
+                    <Form.Field
+                      className={"myfont"}
+                      control={Input}
+                      label="نام"
+                    />
+                  </Responsive>
+                </Grid.Column>
+
+                <Grid.Column>
+                  <Responsive as={Segment} onUpdate={this.handleOnUpdate}>
+                    <Form.Field
+                      className={"myfont"}
+                      control={Input}
+                      label="نام خانوادگی"
+                    />
+                  </Responsive>
+                </Grid.Column>
+                <Grid.Column>
+                  <Responsive as={Segment} onUpdate={this.handleOnUpdate}>
+                    <Form.Field
+                      className={"myfont"}
+                      control={Input}
+                      label="شماره تلفن"
+                    />
+                  </Responsive>
+                </Grid.Column>
+                <Grid.Column>
+                  <Responsive as={Segment} >
+                    <Form.Field
+                      className={"myfont"}
+                      control={Input}
+                      label="ایمیل"
+                    />
+                  </Responsive>
+                </Grid.Column>
+                <Grid.Column>
+                  <Responsive as={Segment} onUpdate={this.handleOnUpdate}>
+                    <Form.Field
+                      className={"myfont"}
+                      control={Input}
+                      label="شماره منطقه"
+                    />
+                  </Responsive>
+                </Grid.Column>
+                <Grid.Column>
+                  <Responsive as={Segment} onUpdate={this.handleOnUpdate}>
+                    <Form.Field
+                      className={"myfont"}
+                      control={Input}
+                      label="کد شورای نگهبان"
+                    />
+                    
+                  </Responsive>
+                </Grid.Column>
+                <Form.Field control={Button}>Submit</Form.Field>
+              </Form.Group>
+            </Grid>
+          </Form>
+          </Container>
+
+
+
+<input type='text' ref='candida_id' placeholder='شماره کاندیدا'  />
+        <input type='text' ref='name' placeholder='نام' />
+        <input type='text' ref='family' placeholder='نام خانوادگی' />
+        <input type='text' ref='phonenumber' placeholder='شماره تلفن' />
+        <input type='text' ref='email' placeholder='ایمیل' />
+        <input type='text' ref='region_number' placeholder='شماره منطقه' />
+        <input type='text' ref='name' placeholder='کد شورای نگهبان' />
+        <button onClick={()=>this.addCandida()}>افزودن کاندیدا</button> 
