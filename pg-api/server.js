@@ -35,7 +35,7 @@ app.get("/api/show-candida", function(request, response) {
     if (err) {
       return response.status(400).send(err);
     } else {
-      db.query("select * from candida", (err, table) => {
+      db.query("select * from candida order by candida_id", (err, table) => {
         if (err) {
           return response.status(400).send(err);
         } else {
@@ -67,7 +67,7 @@ app.get("/api/show-people", function(request, response) {
     if (err) {
       return response.status(400).send(err);
     } else {
-      db.query("select * from people", (err, table) => {
+      db.query("select * from people order by national_id", (err, table) => {
         if (err) {
           return response.status(400).send(err);
         } else {
@@ -83,7 +83,7 @@ app.get("/api/show-madrak", function(request, response) {
     if (err) {
       return response.status(400).send(err);
     } else {
-      db.query("select * from madrak", (err, table) => {
+      db.query("select * from madrak order by madrak_number", (err, table) => {
         if (err) {
           return response.status(400).send(err);
         } else {
@@ -99,7 +99,7 @@ app.get("/api/show-gerayesh", function(request, response) {
     if (err) {
       return response.status(400).send(err);
     } else {
-      db.query("select * from gerayesh_hezbi", (err, table) => {
+      db.query("select * from gerayesh_hezbi order by gerayesh_number", (err, table) => {
         if (err) {
           return response.status(400).send(err);
         } else {
