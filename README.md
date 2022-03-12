@@ -1,7 +1,7 @@
 # Welcome to Majles-Election-UI!
 
 It's about online Election system based on PostgresSQL database.
-In this project we'll use to fetch data from postgressql database by **Node.js** server and after that we'll use to show user interface by popular javascript library ** React.js! **⭐⭐
+In this project we'll use to fetch data from postgressql database by **Node.js** server and after that we'll use to show user interface by popular javascript library** React.js!**
 
 
 # Files
